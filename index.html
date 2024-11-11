@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Globe</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <div id="container"></div> <!-- Globe will render here -->
+
+    <div id="popup"> <!-- Popup for showing location info -->
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <h2 id="location-name"></h2>
+        <img id="location-image" src="" alt="Location Image">
+        <p id="description"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/OrbitControls.min.js"></script> <!-- OrbitControls for rotating the globe -->
+    <script src="script.js"></script> <!-- Link to external JS file -->
+
+</body>
+</html>
